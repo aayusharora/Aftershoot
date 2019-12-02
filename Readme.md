@@ -15,9 +15,10 @@
 <h3 class="c3">Describe in 250 words what the feature or service will do and how you’ll use Machine Learning to push the bar:  
 </h3>
 
-<span class="c6">As a professional photographer my uncle spends around <em>eight to ten hours</em> in culling of 4000 photographs after every wedding shoot. The world is moving towards mobile cameras from DSLR. An <strong>on-device ML algorithm </strong> can automate the process to take down the time to 5 minutes or less <em>cutting down 99% </em>of the actual time spent in the process.  
+<span class="c6">As a professional photographer my uncle spends around <em>eight to ten hours</em> in culling of 4000 photographs after every wedding shoot. My sister spends around 3-4 hours figuring and sorting the best pictures in the gallery.
+The world is moving towards mobile cameras from DSLR. An <strong>on-device ML algorithm </strong> can automate the process to take down the time to 5 minutes or less <em>cutting down 99% </em>of the actual time spent in the process.  
 With on device machine learning, the service will be able to classify images into blurry, out of focus, overexposed, underexposed, duplicates and best shots.  
-This will provide a professional photographer with more time to grow his photography business, and also in the long run a platform to an amateur photographer to know what's good and what's bad photo looks like.  
+This will provide a professional photographer with more time to grow his photography business, a platform to an amateur photographer to know what's good and what's bad photo looks like, and a person like my sister to save a lot of time in figuring out her best shots.
 </span>
 
 <span class="c5"></span>
