@@ -6,18 +6,16 @@
 
 <span class="c20 c21 c22"></span>
 
-<span class="c20 c21 c22">*Please make a copy of this document and include this in your GitHub repository for your submission, using the tag #AndroidDevChallenge*</span>
-
 <span class="c19 c21"></span>
 
 <span class="c19 c21">Tell us what your idea is.</span>
 
 * * *
 
-<span class="c3">Describe in 250 words what the feature or service will do and how you’ll use Machine Learning to push the bar:  
-</span>
+<h3 class="c3">Describe in 250 words what the feature or service will do and how you’ll use Machine Learning to push the bar:  
+</h3>
 
-<span class="c6">As a professional photographer my uncle spends around <i>eight to ten hours</i> in culling of 4000 photographs after every wedding shoot. The world is moving towards mobile cameras from DSLR. An <strong>on-device ML algorithm </strong> can automate the process to take down the time to 5 minutes or less cutting down 99% of the actual time spent in the process.  
+<span class="c6">As a professional photographer my uncle spends around <em>eight to ten hours</em> in culling of 4000 photographs after every wedding shoot. The world is moving towards mobile cameras from DSLR. An <strong>on-device ML algorithm </strong> can automate the process to take down the time to 5 minutes or less <em>cutting down 99% </em>of the actual time spent in the process.  
 With on device machine learning, the service will be able to classify images into blurry, out of focus, overexposed, underexposed, duplicates and best shots.  
 This will provide a professional photographer with more time to grow his photography business, and also in the long run a platform to an amateur photographer to know what's good and what's bad photo looks like.  
 </span>
