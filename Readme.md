@@ -8,7 +8,7 @@
 
 <span class="c19 c21"></span>
 
-<span class="c19 c21">Tell us what your idea is.</span>
+<h4 class="c19 c21">Tell us what your idea is.</h4>
 
 * * *
 
@@ -28,7 +28,7 @@ This will provide a professional photographer with more time to grow his photogr
 
 * * *
 
-<span class="c6">Describe where your project is, how you could use Google’s help in the endeavor, and how you plan on using On-Device ML technology to bring the concept to life. The best submissions have a great idea combined with a concrete path of where you plan on going, which should include:</span>
+<h3 class="c6">Describe where your project is, how you could use Google’s help in the endeavor, and how you plan on using On-Device ML technology to bring the concept to life. The best submissions have a great idea combined with a concrete path of where you plan on going, which should include:</h3>
 
 *   <span class="c3">(1) any potential sample code you’ve already written,</span>
 *   <span class="c3">(2) a list of the ways you could use Google’s help,</span>
@@ -40,26 +40,26 @@ With the help of Google and the best datasets, we are aiming to achieve a higher
 
 <span class="c3">With the help of AutoML and our proprietary algorithms, we have already created a Proof of concept.  
 
-Timeline:  
-December 2 - December 9 : Creating the user interface  
-December 9 - December 15: Releasing Proof of Concept with blurry, out of focus and duplicates classification  
-December 15 - December 22: Creating datasets, training models on Blinks, emotions, cropped and sharpness on Firebase Vision Edge</span>
+<strong>Timeline:</strong>  
+<strong>December 2 - December 9 :</strong> Creating the user interface  
+<strong>December 9 - December 15:</strong> Releasing Proof of Concept with blurry, out of focus and duplicates classification 
+<strong>December 15 - December 22:</strong> Creating datasets, training models on Blinks, emotions, cropped and sharpness on Firebase Vision Edge</span>
 
 <span class="c3">Dec 22- Dec 29: Testing Models and Evaluating Results  
-Dec 29 - Jan 6 : Integrating New Models with User Interface  
-Jan 6 - Jan 12: Testing the Integration and handing over to users  
-Jan 12- Jan 19: Asking Feedback to reiterate  
-Jan 19 - Jan 26:  Working on Iteration</span>
+<strong>Dec 29 - Jan 6 :</strong> Integrating New Models with User Interface  
+<strong>Jan 6 - Jan 12:</strong> Testing the Integration and handing over to users  
+<strong>Jan 12- Jan 19: </strong>Asking Feedback to reiterate  
+<strong>Jan 19 - Jan 26:</strong>  Working on Iteration</span>
 
 <span class="c3">Jan 26 - Feb 1: Working on Iteration  
-Feb 1 - Feb 7: Releasing MVP  
-Feb 7 - Feb 14: Work on Algorithm Accuracy  
-Feb 14 - Feb 21: Testing and integrating better accuracy models  
-Feb 21 - March 1: Customer Feedback  
-March 1 - March 8 : Reiterating on Customer Feedback  
-March 9 - March 16: Launch</span>
+<strong>Feb 1 - Feb 7:</strong> Releasing MVP  
+<strong>Feb 7 - Feb 14:</strong> Work on Algorithm Accuracy  
+<strong>Feb 14 - Feb 21:</strong> Testing and integrating better accuracy models  
+<strong>Feb 21 - March 1:</strong> Customer Feedback  
+<strong>March 1 - March 8 :</strong> Reiterating on Customer Feedback  
+<strong>March 9 - March 16:</strong> Launch</span>
 
-<span class="c19 c21">Tell us about you.</span>
+<h4 class="c19 c21">Tell us about you.</h4>
 
 * * *
 
