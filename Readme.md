@@ -48,7 +48,7 @@ With the help of Google and the best datasets, we are aiming to achieve a higher
 <strong>Dec 29 - Jan 6 :</strong> Integrating New Models with User Interface  
 <strong>Jan 6 - Jan 12:</strong> Testing the Integration and handing over to users  
 <strong>Jan 12- Jan 19: </strong>Asking Feedback to reiterate  
-<strong>Jan 19 - Feb 1</strong>  Working on Iteration
+<strong>Jan 19 - Feb 1</strong>  Working on Iteration <br>
 <strong>Feb 1 - Feb 7:</strong> Releasing MVP  
 <strong>Feb 7 - Feb 14:</strong> Work on Algorithm Accuracy  
 <strong>Feb 14 - Feb 21:</strong> Testing and integrating better accuracy models  
