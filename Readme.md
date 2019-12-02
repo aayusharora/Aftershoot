@@ -38,28 +38,26 @@ This will provide a professional photographer with more time to grow his photogr
 <span class="c3">We are working on the primary market research of this concept from past 3-4 months and results are really convincing. For the prototype, we have used  Firebase Vision Edge to classify photos into blur and unblur and overexposed and underexposed with an accuracy of 80% and 85% respectively.  
 With the help of Google and the best datasets, we are aiming to achieve a higher accuracy in our algorithms  along with a possible integration of this in Google Photos.</span>
 
-<span class="c3">With the help of AutoML and our proprietary algorithms, we have already created a Proof of concept.  
+<span class="c3">With the help of AutoML and our proprietary algorithms, we have already created a Proof of concept.</span>
 
 <strong>Timeline:</strong>  
-<strong>December 2 - December 9 :</strong> Creating the user interface  
-<strong>December 9 - December 15:</strong> Releasing Proof of Concept with blurry, out of focus and duplicates classification 
-<strong>December 15 - December 22:</strong> Creating datasets, training models on Blinks, emotions, cropped and sharpness on Firebase Vision Edge</span>
+<strong>Dec 2 - Dec 9 :</strong> Creating the user interface  
+<strong>Dec 9 - Dec 15:</strong> Releasing Proof of Concept with blurry, out of focus and duplicates classification 
+<strong>Dec 15 - Dec 22:</strong> Creating datasets, training models on Blinks, emotions, cropped and sharpness on Firebase Vision Edge
 
-<span class="c3">
+
 <strong>Dec 22- Dec 29:</strong> Testing Models and Evaluating Results  
 <strong>Dec 29 - Jan 6 :</strong> Integrating New Models with User Interface  
 <strong>Jan 6 - Jan 12:</strong> Testing the Integration and handing over to users  
 <strong>Jan 12- Jan 19: </strong>Asking Feedback to reiterate  
-<strong>Jan 19 - Jan 26:</strong>  Working on Iteration</span>
-
-<span class="c3">
+<strong>Jan 19 - Jan 26:</strong>  Working on Iteration
 <strong>Jan 26 - Feb 1:</strong> Working on Iteration  
 <strong>Feb 1 - Feb 7:</strong> Releasing MVP  
 <strong>Feb 7 - Feb 14:</strong> Work on Algorithm Accuracy  
 <strong>Feb 14 - Feb 21:</strong> Testing and integrating better accuracy models  
-<strong>Feb 21 - March 1:</strong> Customer Feedback  
-<strong>March 1 - March 8 :</strong> Reiterating on Customer Feedback  
-<strong>March 9 - March 16:</strong> Launch</span>
+<strong>Feb 21 - Mar 1:</strong> Customer Feedback  
+<strong>Mar 1 - Mar 8 :</strong> Reiterating on Customer Feedback  
+<strong>Mar 9 - Mar 16:</strong> Launch
 
 <h4 class="c19 c21">Tell us about you.</h4>
 
