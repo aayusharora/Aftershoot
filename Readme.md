@@ -60,8 +60,8 @@ With the help of Google and the best datasets, we are aiming to achieve a higher
 
 * * *
 
-<span class="c5"> A great idea is just one part of the equation; we also want to learn a bit more about you. Share with us some of your other projects so we can get an idea of how we can assist you with your project.  
-</span>
+<h3 class="c5"> A great idea is just one part of the equation; we also want to learn a bit more about you. Share with us some of your other projects so we can get an idea of how we can assist you with your project.  
+</h3>
 
 <span class="c17">I am a Google Developer Expert for Web and Angular and an avid blogger. I have written some great codelabs on google codelabs along with some technical blogs on Tensorflow. While working with various technologies in the past like Google Cloud, Firebase, NodeJS, Angular, Nativescript etc, I can learn any technology easily.  
 Projects that I have worked on:</span>
