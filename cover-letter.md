@@ -38,7 +38,7 @@ This will provide a professional photographer with more time to grow his photogr
 
 <span class="c3">We are working on the primary market research of this concept from past 3-4 months and results are really convincing. For the prototype, we have used  Firebase Vision Edge to classify photos into blur and unblur and overexposed and underexposed with an accuracy of 80% and 85% respectively.  
 With the help of Google and the best datasets, we are aiming to achieve a higher accuracy in our algorithms  along with a possible integration of this in Google Photos.</span>
-
+<p>Demo link: https://drive.google.com/file/d/1tt2JZPNd1QyShZr9fxt7YF9SxoIxByCO/view</p>
 <span class="c3">With the help of AutoML and our proprietary algorithms, we have already created a Proof of concept.</span>
 
 <strong>Timeline:</strong>  
