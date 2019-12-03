@@ -45,7 +45,7 @@ With the help of Google and the best datasets, we are aiming to achieve a higher
 <strong>Timeline:</strong>  
 <strong>Dec 2 - Dec 9 :</strong> Creating the user interface  
 <strong>Dec 9 - Dec 15:</strong> Releasing Proof of Concept with blurry, out of focus and duplicates classification<br>
-<strong>Dec 15 - Dec 22:</strong> Creating datasets, training models on Blinks, emotions, cropped and sharpness on Firebase Vision Edge<br>
+<strong>Dec 15 - Dec 22:</strong> Creating datasets, training models on Blinks, emotions, cropped and sharpness on AutoML<br>
 <strong>Dec 22- Dec 29:</strong> Testing Models and Evaluating Results  
 <strong>Dec 29 - Jan 6 :</strong> Integrating New Models with User Interface  
 <strong>Jan 6 - Jan 12:</strong> Testing the Integration and handing over to users  
