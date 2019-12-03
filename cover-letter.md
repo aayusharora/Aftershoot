@@ -37,7 +37,7 @@ This will provide a professional photographer with more time to grow his photogr
 *   <span class="c3">(3) as well as the timeline on how you plan on bringing it to life by May 1, 2020\.  
     </span>
 
-<span class="c3">We are working on the primary market research of this concept from past 3-4 months and results are really convincing. For the prototype, we have used  AutoML to classify photos into blur and unblur and overexposed and underexposed with an accuracy of 80% and 85% respectively.  
+<span class="c3">We are working on the primary market research of this concept from past 3-4 months and results are really convincing. For the prototype, we have used  AutoML to classify photos into blur and unblur and overexposed and underexposed with an accuracy of 81% and 82% respectively.  
 With the help of Google and the best datasets, we are aiming to achieve a higher accuracy in our algorithms  along with a possible integration of this in Google Photos.</span>
 <p>Demo link: https://drive.google.com/file/d/1tt2JZPNd1QyShZr9fxt7YF9SxoIxByCO/view</p>
 <span class="c3">With the help of AutoML and our proprietary algorithms, we have already created a Proof of concept.</span>
@@ -86,7 +86,7 @@ Projects that I have worked on:</span>
 *   <span class="c5">Be sure to include this cover letter in your GitHub repository</span>
 *   <span class="c5">Your GitHub repository should be tagged #AndroidDevChallenge</span>
 *   <span class="c5">Don’t forget to include other items in your GitHub repository to help us evaluate your submission; you can include prior projects you've worked on, sample code you've already built for this project, or anything else you think could be helpful in evaluating your concept and your ability to build it</span>
-*   <span class="c14 c16">[The final step is to fill out this form to officially submit your proposal.](https://www.google.com/url?q=https://docs.google.com/forms/d/e/1FAIpQLSe43koQL33IzgxXQl29Ex3AhFuqd4hQzxLiXREqwRkDGtx1vA/viewform?usp%3Dsf_link&sa=D&ust=1575291485568000)</span>
+*   <span class="c14 c16">[The final step is to fill out this form to officially submit your proposal.](https://www.google.com/url?q=https://docs.google.com/forms/d/e/1FAIpQLSe43koQL33IzgxXQl29Ex3AhFuqd4hQzxLiXREqwRkDGtx1vA/viewform?usp%3Dsf_link&sa=D&ust=15752914855600)</span>
 
 <span class="c7"></span>
 
