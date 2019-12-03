@@ -12,3 +12,22 @@ https://drive.google.com/file/d/1tt2JZPNd1QyShZr9fxt7YF9SxoIxByCO/view
 
 And also some AutoML exciting results :D
 
+| Feature       | Status        |Accuracy|
+| ------------- |:-------------:| -----:|
+| Blur          | Done          | 81%   |
+| Exposure      | Done          | 82%   |
+| Blinks        | In Progress   |       |
+| Duplicates    | In Progress   |       |
+| ...           | In Progress   |       |
+
+### AutoML Results:
+<h4>Blur Detection Results:</h4>
+<p>Bokeh</p>
+<img src='./images/1.png' style='max-width: 200px' alt='bokeh'/>
+<p>Blurry</p>
+<img src='./images/2.png' style='max-width: 200px' alt='blurry'/>
+<h4>Exposure Detection</h4>
+<p>UnderExposed</p>
+<img src='./images/underexposed.png' style='max-width: 200px' alt='underexposed'/>
+<p>OverExposed</p>
+<img src='./images/overexposed.png' style='max-width: 200px' alt='overexposed'/>
