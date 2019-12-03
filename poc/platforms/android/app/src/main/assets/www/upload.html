@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href='style.css' rel='stylesheet'>
+    </head>
+    <body>
+        <div id='drop' class='container'>
+               <img src='hu.jpeg' style='width: 20%; margin: 0 auto; display: block; margin-top: 40px'>
+                <div class="container p-y-1">
+                        <div class="row m-b-1">
+                          </div>
+                        </div>
+                         <div class="row m-b-1">
+                          <div class="col-sm-6 offset-sm-3">
+                            
+                            <!-- <button type="button" class="btn btn-success btn-block" onclick="document.getElementById('inputFile').click()">Add Image</button> -->
+                            <div class="form-group inputDnD">
+                              <label class="sr-only" for="inputFile">File Upload</label>
+                              <input type="file" multiple webkitdirectory class="form-control-file text-success font-weight-bold" id="inputFile"  onchange="readUrl(this)" data-title="">
+                              <button type="button" class="btn btn-success btn-block" onclick="start()">Start Culling</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+        </div>
+        <div id='spin' style='display: none;' class="LoaderBalls">
+                <div class="LoaderBalls__item"></div>
+                <div class="LoaderBalls__item"></div>
+                <div class="LoaderBalls__item"></div>
+         </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src='./app.js'></script> 
+    <script>
+      var spinner = document.getElementById('spin');
+      var drop = document.getElementById('drop');
+
+      function start() {
+          drop.style.display = 'none';
+          spinner.style.display = 'flex';
+
+        setTimeout(function(){
+            window.location.href='tabs.html';
+        }, 8000);
+      }
+
+    </script>
+   </body>
+</html>
