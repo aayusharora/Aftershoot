@@ -15,10 +15,11 @@
 <h3 class="c3">Describe in 250 words what the feature or service will do and how you’ll use Machine Learning to push the bar:  
 </h3>
 
-<span class="c6">As a professional photographer my uncle spends around <em>eight to ten hours</em> in culling of 4000 photographs after every wedding shoot. My sister spends around 3-4 hours figuring and sorting the best pictures in the gallery.
-The world is moving towards mobile cameras from DSLR. An <strong>on-device ML algorithm </strong> can automate the process to take down the time to 5 minutes or less <em>cutting down 99% </em>of the actual time spent in the process.  
+<span class="c6">As a professional photographer my uncle spends around <em>eight to ten hours</em> in culling of 4000 photographs after every wedding shoot.
+The world is moving towards mobile cameras from DSLR. 
+An <strong>on-device ML algorithm </strong> can automate the process to take down the time to 5 minutes or less <em>cutting down 99% </em>of the actual time spent in the process.  
 With on device machine learning, the service will be able to classify images into blurry, out of focus, overexposed, underexposed, duplicates and best shots.  
-This will provide a professional photographer with more time to grow his photography business, a platform to an amateur photographer to know what's good and what's bad photo looks like, and a person like my sister to save a lot of time in figuring out her best shots.
+This will provide a professional photographer with more time to grow his photography business, and a hobbyist to save a lot of time in figuring out her best shots.
 </span>
 
 <span class="c5"></span>
@@ -36,7 +37,7 @@ This will provide a professional photographer with more time to grow his photogr
 *   <span class="c3">(3) as well as the timeline on how you plan on bringing it to life by May 1, 2020\.  
     </span>
 
-<span class="c3">We are working on the primary market research of this concept from past 3-4 months and results are really convincing. For the prototype, we have used  Firebase Vision Edge to classify photos into blur and unblur and overexposed and underexposed with an accuracy of 80% and 85% respectively.  
+<span class="c3">We are working on the primary market research of this concept from past 3-4 months and results are really convincing. For the prototype, we have used  AutoML to classify photos into blur and unblur and overexposed and underexposed with an accuracy of 80% and 85% respectively.  
 With the help of Google and the best datasets, we are aiming to achieve a higher accuracy in our algorithms  along with a possible integration of this in Google Photos.</span>
 <p>Demo link: https://drive.google.com/file/d/1tt2JZPNd1QyShZr9fxt7YF9SxoIxByCO/view</p>
 <span class="c3">With the help of AutoML and our proprietary algorithms, we have already created a Proof of concept.</span>
