@@ -12,6 +12,7 @@ Solving the problem for a professional photographer is just a step towards our v
 We have spent a great amount of time last quarter to analyse the extent of the problem. In the last month, we have successfully developed a Proof of Concept to classify blurry, bokeh and unblurry images. We have extensively use Cloud AutoMl to achieve this. 
 
 Please have a look at our POC.
+POC - Cordova App
 https://drive.google.com/file/d/1tt2JZPNd1QyShZr9fxt7YF9SxoIxByCO/view
 
 And also some AutoML exciting results :D
