@@ -2,8 +2,9 @@
   <img src='images/Screenshot 2019-12-03 at 8.24.22 PM.png'>
 </p>
 
-## Why Aftershoot?
+## Origin 
 My uncle is a wedding photographer. Getting 200 best photos for the album out of 4000 photos after each wedding is 1-2 days frustrating process for him. With technology, filtering the same amount technically bad photos is feasible in lesser than 5 minutes. Like my uncle, there are 7 Billion photographers on the planet who can cut down 99% of their time with Aftershoot.
+We want to start with photographers but want to scale it to general audience so that they can get their best photos using Mobile camera.
 
 ## How do we envision this?
 Solving the problem for a professional photographer is just a step towards our vision. Our final vision is to give this app to every person on this planet to gather his best shots filtering out all blurry, out of focus, overexposed, underexposed and duplicates.
