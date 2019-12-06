@@ -16,6 +16,11 @@ Please have a look at our POC.
 POC - Cordova App
 https://drive.google.com/file/d/1tt2JZPNd1QyShZr9fxt7YF9SxoIxByCO/view
 
+Snapshots [ Cordova POC ]
+<p>
+  <img src='images/Screenshot 2019-12-06 at 4.23.51 PM.png' alt='shots' width='400'>
+</p>
+
 And also some AutoML exciting results :D
 
 | Feature       | Status        |Accuracy|
