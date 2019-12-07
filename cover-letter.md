@@ -65,7 +65,9 @@ With the help of Google and the best datasets, we are aiming to achieve a higher
 <h3 class="c5"> A great idea is just one part of the equation; we also want to learn a bit more about you. Share with us some of your other projects so we can get an idea of how we can assist you with your project.  
 </h3>
 
-<span class="c17">I am a Google Developer Expert for Web and Angular and an avid blogger. I have written some great codelabs on google codelabs along with some technical blogs on Tensorflow. While working with various technologies in the past like Google Cloud, Firebase, NodeJS, Angular, Nativescript etc, I can learn any technology easily.  
+<span class="c17">I am a <a href='https://developers.google.com/community/experts/directory/profile/profile-aayush_arora'>Google Developer Expert</a> for Web and Angular and an avid <a href='https://medium.com/@angularboy'>blogger</a>. Being a ML facilitator for Google, I have grown the <a href='https://www.facebook.com/groups/2063555223906794/'>Google AI Community</a> India from scratch upto 700 members today. After nominated as the first guest author on Google Codelabs some of my <a href='https://codelabs.developers.google.com/codelabs/angular-slider-element/#0'>codelabs</a> for ML and Angular has helped the ML community. 
+My experience lies in solving real world problems by learning new technologies quickly.
+
 Projects that I have worked on:</span>
 
 1.  <span class="c11">[Open-event-wsgen](https://www.google.com/url?q=https://github.com/fossasia/open-event-wsgen&sa=D&ust=1575291485564000)</span><span class="c20"> </span><span class="c13">: A platform to generate websites automatically for events, meetups, and conferences.</span>
@@ -73,6 +75,11 @@ Projects that I have worked on:</span>
 3.  <span class="c11">[Motley](https://www.google.com/url?q=https://github.com/coding-blocks/motley&sa=D&ust=1575291485565000)</span><span class="c13">: A UI framework to follow the ITCSS design language</span>
 4.  <span class="c11">[Eye-bot](https://www.google.com/url?q=https://github.com/aayusharora/eye-bot&sa=D&ust=1575291485566000)</span><span class="c13 c14">[:](https://www.google.com/url?q=https://github.com/aayusharora/eye-bot&sa=D&ust=1575291485566000) </span><span class="c13 c21">A R-PI based IOT device control the prosthetic on eye blinks.</span>
 
+Popular Blog posts:
+<p><a href='https://heartbeat.fritz.ai/using-genetic-algorithms-to-automate-the-chrome-dinosaur-game-part-2-1c0007334297'>Using Genetic Algorithms to Automate Chrome Dino Game</a></p>
+<p><a href='https://heartbeat.fritz.ai/automating-chrome-dinosaur-game-part-1-290578f13907'>Using Tensorflow.js to Automate Chrome Dino Game</a></p>
+<p><a href='https://medium.com/coding-blocks/my-first-contribution-to-nasa-a2341f99fcf5'>My First Contribution to NASA</a>
+</p>
 <span class="c14 c17">[  
 ](https://www.google.com/url?q=https://github.com/aayusharora/eye-bot&sa=D&ust=1575291485567000)</span><span class="c19">  
 </span>
