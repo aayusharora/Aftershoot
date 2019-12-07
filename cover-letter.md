@@ -80,9 +80,7 @@ Popular Blog posts:
 <p><a href='https://heartbeat.fritz.ai/automating-chrome-dinosaur-game-part-1-290578f13907'>Using Tensorflow.js to Automate Chrome Dino Game</a></p>
 <p><a href='https://medium.com/coding-blocks/my-first-contribution-to-nasa-a2341f99fcf5'>My First Contribution to NASA</a>
 </p>
-<span class="c14 c17">[  
-](https://www.google.com/url?q=https://github.com/aayusharora/eye-bot&sa=D&ust=1575291485567000)</span><span class="c19">  
-</span>
+
 
 <span class="c19 c21">Next steps.  </span>
 
