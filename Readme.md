@@ -3,7 +3,7 @@
 </p>
 
 ## Origin 
-My uncle is a wedding photographer. Getting 200 best photos for the album out of 4000 photos after each wedding is 1-2 days frustrating process for him. With technology, filtering the same amount technically bad photos is feasible in lesser than 5 minutes. Like my uncle, there are 7 Billion photographers on the planet who can cut down 99% of their time with Aftershoot.
+My uncle is a wedding photographer. Getting 200 best photos for the album out of 4000 photos after each wedding is 1-2 days frustrating process for him. With technology, filtering the same amount of technically bad photos is feasible in lesser than 5 minutes. Like my uncle, there are 7 Billion photographers on the planet who can cut down 99% of their time with Aftershoot.
 We want to start with photographers but want to scale it to general audience so that they can get their best photos using Mobile camera.
 
 ## How do we envision this?
