@@ -27,7 +27,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.3.0'
+        classpath 'com.android.tools.build:gradle:3.5.2'
     }
 }
 
@@ -50,11 +50,11 @@ ext {
 
     // The value for android.compileSdkVersion.
     if (!project.hasProperty('cdvCompileSdkVersion')) {
-        cdvCompileSdkVersion = null;
+        cdvCompileSdkVersion = null
     }
     // The value for android.buildToolsVersion.
     if (!project.hasProperty('cdvBuildToolsVersion')) {
-        cdvBuildToolsVersion = null;
+        cdvBuildToolsVersion = null
     }
     // Sets the versionCode to the given value.
     if (!project.hasProperty('cdvVersionCode')) {
@@ -70,7 +70,7 @@ ext {
     }
     // The value for android.targetSdkVersion.
     if (!project.hasProperty('cdvTargetSdkVersion')) {
-        cdvTargetSdkVersion = null;
+        cdvTargetSdkVersion = null
     }
     // Whether to build architecture-specific APKs.
     if (!project.hasProperty('cdvBuildMultipleApks')) {
@@ -112,10 +112,10 @@ if (hasBuildExtras2) {
 
 // Set property defaults after extension .gradle files.
 ext.cdvCompileSdkVersion = cdvCompileSdkVersion == null ? (
-    defaultCompileSdkVersion == null 
-        ? privateHelpers.getProjectTarget()
-        : defaultCompileSdkVersion 
-) : Integer.parseInt('' + cdvCompileSdkVersion);
+        defaultCompileSdkVersion == null
+                ? privateHelpers.getProjectTarget()
+                : defaultCompileSdkVersion
+) : Integer.parseInt('' + cdvCompileSdkVersion)
 
 if (ext.cdvBuildToolsVersion == null) {
     ext.cdvBuildToolsVersion = privateHelpers.findLatestInstalledBuildTools()
@@ -129,15 +129,15 @@ if (ext.cdvReleaseSigningPropertiesFile == null && file('../release-signing.prop
 }
 
 // Cast to appropriate types.
-ext.cdvBuildMultipleApks = cdvBuildMultipleApks == null ? false : cdvBuildMultipleApks.toBoolean();
-ext.cdvVersionCodeForceAbiDigit = cdvVersionCodeForceAbiDigit == null ? false : cdvVersionCodeForceAbiDigit.toBoolean();
+ext.cdvBuildMultipleApks = cdvBuildMultipleApks == null ? false : cdvBuildMultipleApks.toBoolean()
+ext.cdvVersionCodeForceAbiDigit = cdvVersionCodeForceAbiDigit == null ? false : cdvVersionCodeForceAbiDigit.toBoolean()
 
 // minSdkVersion, maxSdkVersion and targetSdkVersion
 ext.cdvMinSdkVersion = cdvMinSdkVersion == null ? defaultMinSdkVersion : Integer.parseInt('' + cdvMinSdkVersion)
 if (cdvMaxSdkVersion != null) {
     ext.cdvMaxSdkVersion = Integer.parseInt('' + cdvMaxSdkVersion)
 }
-ext.cdvTargetSdkVersion = cdvTargetSdkVersion == null ? defaultTargetSdkVersion  : Integer.parseInt('' + cdvTargetSdkVersion)
+ext.cdvTargetSdkVersion = cdvTargetSdkVersion == null ? defaultTargetSdkVersion : Integer.parseInt('' + cdvTargetSdkVersion)
 
 ext.cdvVersionCode = cdvVersionCode == null ? null : Integer.parseInt('' + cdvVersionCode)
 
@@ -145,7 +145,7 @@ def computeBuildTargetName(debugBuild) {
     def ret = 'assemble'
     if (cdvBuildMultipleApks && cdvBuildArch) {
         def arch = cdvBuildArch == 'arm' ? 'armv7' : cdvBuildArch
-        ret += '' + arch.toUpperCase().charAt(0) + arch.substring(1);
+        ret += '' + arch.toUpperCase().charAt(0) + arch.substring(1)
     }
     return ret + (debugBuild ? 'Debug' : 'Release')
 }
@@ -194,13 +194,13 @@ android {
             maxSdkVersion cdvMaxSdkVersion
         }
 
-        if(cdvTargetSdkVersion != null) {
+        if (cdvTargetSdkVersion != null) {
             targetSdkVersion cdvTargetSdkVersion
         }
     }
 
     lintOptions {
-      abortOnError false;
+        abortOnError false
     }
 
     compileSdkVersion cdvCompileSdkVersion
@@ -217,31 +217,31 @@ android {
 
         productFlavors {
             armeabi {
-                versionCode defaultConfig.versionCode*10 + 1
+                versionCode defaultConfig.versionCode * 10 + 1
                 ndk {
                     abiFilters = ["armeabi"]
                 }
             }
             armv7 {
-                versionCode defaultConfig.versionCode*10 + 2
+                versionCode defaultConfig.versionCode * 10 + 2
                 ndk {
                     abiFilters = ["armeabi-v7a"]
                 }
             }
             arm64 {
-                versionCode defaultConfig.versionCode*10 + 3
+                versionCode defaultConfig.versionCode * 10 + 3
                 ndk {
                     abiFilters = ["arm64-v8a"]
                 }
             }
             x86 {
-                versionCode defaultConfig.versionCode*10 + 4
+                versionCode defaultConfig.versionCode * 10 + 4
                 ndk {
                     abiFilters = ["x86"]
                 }
             }
             x86_64 {
-                versionCode defaultConfig.versionCode*10 + 5
+                versionCode defaultConfig.versionCode * 10 + 5
                 ndk {
                     abiFilters = ["x86_64"]
                 }
@@ -250,7 +250,7 @@ android {
     } else if (Boolean.valueOf(cdvVersionCodeForceAbiDigit)) {
         // This provides compatibility to the default logic for versionCode before cordova-android 5.2.0
         defaultConfig {
-            versionCode defaultConfig.versionCode*10
+            versionCode defaultConfig.versionCode * 10
         }
     }
 
@@ -264,7 +264,8 @@ android {
             release {
                 // These must be set or Gradle will complain (even if they are overridden).
                 keyAlias = ""
-                keyPassword = "__unset" // And these must be set to non-empty in order to have the signing step added to the task graph.
+                keyPassword = "__unset"
+                // And these must be set to non-empty in order to have the signing step added to the task graph.
                 storeFile = null
                 storePassword = "__unset"
             }
@@ -294,25 +295,33 @@ dependencies {
     // SUB-PROJECT DEPENDENCIES START
     implementation(project(path: ":CordovaLib"))
     // SUB-PROJECT DEPENDENCIES END
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation("com.github.bumptech.glide:glide:4.9.0") {
+        exclude group: "com.android.support"
+    }
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    implementation 'com.android.support:cardview-v7:28.0.0'
+
 }
 
 def promptForReleaseKeyPassword() {
     if (!cdvReleaseSigningPropertiesFile) {
-        return;
+        return
     }
     if ('__unset'.equals(android.signingConfigs.release.storePassword)) {
         android.signingConfigs.release.storePassword = privateHelpers.promptForPassword('Enter key store password: ')
     }
     if ('__unset'.equals(android.signingConfigs.release.keyPassword)) {
-        android.signingConfigs.release.keyPassword = privateHelpers.promptForPassword('Enter key password: ');
+        android.signingConfigs.release.keyPassword = privateHelpers.promptForPassword('Enter key password: ')
     }
 }
 
 gradle.taskGraph.whenReady { taskGraph ->
     taskGraph.getAllTasks().each() { task ->
-      if(['validateReleaseSigning', 'validateSigningRelease', 'validateSigningArmv7Release', 'validateSigningX76Release'].contains(task.name)) {
-         promptForReleaseKeyPassword()
-      }
+        if (['validateReleaseSigning', 'validateSigningRelease', 'validateSigningArmv7Release', 'validateSigningX76Release'].contains(task.name)) {
+            promptForReleaseKeyPassword()
+        }
     }
 }
 
@@ -336,7 +345,7 @@ def addSigningProps(propsFilePath, signingConfig) {
     signingConfig.storePassword = props.get('storePassword', props.get('key.store.password', signingConfig.storePassword))
     def storeType = props.get('storeType', props.get('key.store.type', ''))
     if (!storeType) {
-        def filename = storeFile.getName().toLowerCase();
+        def filename = storeFile.getName().toLowerCase()
         if (filename.endsWith('.p12') || filename.endsWith('.pfx')) {
             storeType = 'pkcs12'
         } else {
