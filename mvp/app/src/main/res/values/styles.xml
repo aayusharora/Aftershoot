@@ -12,7 +12,7 @@
         <item name="windowActionBar">false</item>
         <item name="colorControlNormal">#FFF</item>
         <item name="windowNoTitle">true</item>
-        <item name="android:fontFamily">@font/source_sans_pro_light</item>
+        <item name="android:fontFamily">@font/source_sans_pro_regular</item>
     </style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />

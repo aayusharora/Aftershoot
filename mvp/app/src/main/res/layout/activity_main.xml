@@ -84,8 +84,7 @@
                 android:contentDescription="@string/todo"
                 android:gravity="center"
                 android:text="@string/import_photos"
-                android:textColor="#000"
-                android:textStyle="bold" />
+                android:textColor="#000" />
 
             <TextView
                 android:id="@+id/tvTakePhoto"
@@ -94,8 +93,7 @@
                 android:contentDescription="@string/todo"
                 android:gravity="center"
                 android:text="@string/take_photo"
-                android:textColor="#000"
-                android:textStyle="bold" />
+                android:textColor="#000" />
 
         </LinearLayout>
 
@@ -117,7 +115,7 @@
         android:visibility="gone"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         app:tabGravity="fill"
-        app:tabIndicatorColor="#000"
+        app:tabIndicatorColor="#0F64F2"
         app:tabMode="fixed"
         app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
         app:tabTextColor="#000" />
@@ -129,13 +127,5 @@
         android:visibility="gone"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:visibility="gone"
-        android:id="@+id/recyclerView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:orientation="vertical" />
 
 </LinearLayout>
