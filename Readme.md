@@ -14,10 +14,10 @@ We have spent a great amount of time last quarter to analyse the extent of the p
 Target:  Desktop Application [ Professionals ]  and Android Application [ Amateurs, Hobbyists] 
 
 Please have a look at our POC.
-POC - Electron App
+POC - Electron Desktop App for Professionals 
 https://drive.google.com/file/d/1tt2JZPNd1QyShZr9fxt7YF9SxoIxByCO/view
 
-Snapshots [ Cordova POC ]
+Snapshots [ Android POC for Hobbyists and Amateurs ]
 <p>
   <img src='images/Screenshot 2019-12-06 at 4.23.51 PM.png' alt='shots' width='400'>
 </p>
