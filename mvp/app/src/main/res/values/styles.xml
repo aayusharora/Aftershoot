@@ -8,4 +8,16 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="AppTheme.NoActionBar"> <!-- Selectable removes action bar -->
+        <item name="windowActionBar">false</item>
+        <item name="colorControlNormal">#FFF</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:fontFamily">@font/source_sans_pro_light</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
 </resources>

@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">mvp</string>
     <string name="todo">TODO</string>
+    <string name="import_photos">Import Photos</string>
+    <string name="take_photo">Take Photo</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

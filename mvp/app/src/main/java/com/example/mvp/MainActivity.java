@@ -19,13 +19,22 @@
 
 package com.example.mvp;
 
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.FrameLayout;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.StaggeredGridLayoutManager;
+import androidx.viewpager.widget.ViewPager;
+
+import com.google.android.material.tabs.TabLayout;
 
 import java.util.ArrayList;
 
@@ -35,6 +44,13 @@ public class MainActivity extends AppCompatActivity {
     private static final int NUM_COLUMNS=2;
 
     private ArrayList<String> imageUrls=new ArrayList<>();
+
+    FrameLayout frameLayout;
+    TextView tvTakePhoto, tvImportPhotos;
+    LinearLayout linearLayout;
+    ImageView ivGallery, ivCamera;
+    private TabLayout tabLayout;
+    private ViewPager viewPager;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -50,9 +66,44 @@ public class MainActivity extends AppCompatActivity {
         /* Set by <content src="index.html" /> in config.xml
         loadUrl(launchUrl);*/
 
-        initImageBitmap();
-        initRecyclerView();
+        //initImageBitmap();
+        //initRecyclerView();
 
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);//  set status text dark
+        }
+
+        frameLayout=findViewById(R.id.fragment_container);
+        viewPager=findViewById(R.id.viewPager);
+        tabLayout=findViewById(R.id.tabLayout);
+        tvImportPhotos=findViewById(R.id.tvImportPhotos);
+        tvTakePhoto=findViewById(R.id.tvTakePhoto);
+        linearLayout=findViewById(R.id.linearLayout);
+
+
+        ivCamera=findViewById(R.id.ivCamera);
+        ivGallery=findViewById(R.id.ivGallery);
+
+        ivGallery.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                ivGallery.setVisibility(View.GONE);
+                ivCamera.setVisibility(View.GONE);
+                tvImportPhotos.setVisibility(View.GONE);
+                tvTakePhoto.setVisibility(View.GONE);
+                linearLayout.setVisibility(View.GONE);
+
+                viewPager.setVisibility(View.VISIBLE);
+                tabLayout.setVisibility(View.VISIBLE);
+                TabAdapter adapter=new TabAdapter(getSupportFragmentManager());
+                adapter.addFragment(new GoodPhotosFragment(), "Good Photos");
+                adapter.addFragment(new BadPhotosFragment(), "Bad Photos");
+                adapter.addFragment(new ObjectsFragment(), "Objects");
+                viewPager.setAdapter(adapter);
+                tabLayout.setupWithViewPager(viewPager);
+            }
+        });
 
     }
 
