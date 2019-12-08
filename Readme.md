@@ -1,6 +1,7 @@
-<p align='center'>
-  <img src='images/Screenshot 2019-12-03 at 8.24.22 PM.png'>
-</p>
+<div style="text-align:center">
+<img src="images/logo.png" 
+alt="logo" width="300"/>
+</div>
 
 ## Origin 
 My uncle is a wedding photographer. Getting 200 best photos for the album out of 4000 photos after each wedding is 1-2 days frustrating process for him. With technology, filtering the same amount of technically bad photos is feasible in lesser than 5 minutes. Like my uncle, there are 7 Billion photographers on the planet who can cut down 99% of their time with Aftershoot.
