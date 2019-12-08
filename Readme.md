@@ -11,7 +11,18 @@ Solving the problem for a professional photographer is just a step towards our v
 
 ## How is the progress so far?
 We have spent a great amount of time last quarter to analyse the extent of the problem. In the last month, we have successfully developed a Proof of Concept to classify blurry, bokeh and unblurry images. We have extensively use Cloud AutoMl to achieve this. 
-Target:  Desktop Application [ Professionals ]  and Android Application [ Amateurs, Hobbyists] 
+
+- Desktop Application [ Professionals ]
+  - [x] POC 
+  - [x] MVP
+
+- Android Application [ Amateurs, Hobbyists ] 
+  - [x] POC 
+  - [ ] MVP 
+
+
+#### Architecture
+<img src='images/Architecture.png' alt='architecture'>
 
 Please have a look at our POC.
 POC - Electron Desktop App for Professionals 
