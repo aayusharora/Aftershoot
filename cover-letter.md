@@ -80,19 +80,3 @@ Popular Blog posts:
 <p><a href='https://heartbeat.fritz.ai/automating-chrome-dinosaur-game-part-1-290578f13907'>Using Tensorflow.js to Automate Chrome Dino Game</a></p>
 <p><a href='https://medium.com/coding-blocks/my-first-contribution-to-nasa-a2341f99fcf5'>My First Contribution to NASA</a>
 </p>
-
-
-<span class="c19 c21">Next steps.  </span>
-
-* * *
-
-<span class="c5"> </span>
-
-*   <span class="c5">Be sure to include this cover letter in your GitHub repository</span>
-*   <span class="c5">Your GitHub repository should be tagged #AndroidDevChallenge</span>
-*   <span class="c5">Don’t forget to include other items in your GitHub repository to help us evaluate your submission; you can include prior projects you've worked on, sample code you've already built for this project, or anything else you think could be helpful in evaluating your concept and your ability to build it</span>
-*   <span class="c14 c16">[The final step is to fill out this form to officially submit your proposal.](https://www.google.com/url?q=https://docs.google.com/forms/d/e/1FAIpQLSe43koQL33IzgxXQl29Ex3AhFuqd4hQzxLiXREqwRkDGtx1vA/viewform?usp%3Dsf_link&sa=D&ust=15752914855600)</span>
-
-<span class="c7"></span>
-
-<span class="c7"></span>
