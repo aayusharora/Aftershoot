@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">mvp</string>
+    <string name="todo">TODO</string>
+</resources>
