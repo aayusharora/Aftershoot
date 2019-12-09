@@ -19,6 +19,7 @@
 
 package com.example.mvp;
 
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
@@ -34,8 +35,10 @@ import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.tabs.TabLayout;
 
-public class MainActivity extends AppCompatActivity {
+import java.util.ArrayList;
+import java.util.Objects;
 
+public class MainActivity extends AppCompatActivity {
 
 
     FrameLayout frameLayout;
@@ -44,6 +47,8 @@ public class MainActivity extends AppCompatActivity {
     ImageView ivGallery, ivCamera;
     private TabLayout tabLayout;
     private ViewPager viewPager;
+    private static final int REQUEST_CAMERA=2520, RESULT_LOAD_IMAGE=2521;
+    private ArrayList<String> imagesUriArrayList;
 
     @RequiresApi(api=Build.VERSION_CODES.KITKAT)
     @Override
@@ -77,6 +82,8 @@ public class MainActivity extends AppCompatActivity {
         tvTakePhoto=findViewById(R.id.tvTakePhoto);
         linearLayout=findViewById(R.id.linearLayout);
 
+        imagesUriArrayList=new ArrayList<>();
+
 
         ivCamera=findViewById(R.id.ivCamera);
         ivGallery=findViewById(R.id.ivGallery);
@@ -85,24 +92,104 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                ivGallery.setVisibility(View.GONE);
-                ivCamera.setVisibility(View.GONE);
-                tvImportPhotos.setVisibility(View.GONE);
-                tvTakePhoto.setVisibility(View.GONE);
-                linearLayout.setVisibility(View.GONE);
+                Intent intent=new Intent();
+                intent.setType("image/*");
+                intent.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, true);
+                intent.setAction(Intent.ACTION_GET_CONTENT);
+                startActivityForResult(Intent.createChooser(intent, "Select Picture"), RESULT_LOAD_IMAGE);
 
-                viewPager.setVisibility(View.VISIBLE);
-                tabLayout.setVisibility(View.VISIBLE);
-                TabAdapter adapter=new TabAdapter(getSupportFragmentManager());
-                adapter.addFragment(new GoodPhotosFragment(), "Good Photos");
-                adapter.addFragment(new BadPhotosFragment(), "Bad Photos");
-                adapter.addFragment(new ObjectsFragment(), "Objects");
-                viewPager.setAdapter(adapter);
-                tabLayout.setupWithViewPager(viewPager);
             }
         });
 
     }
 
+    /*public void dialogShowPhoto() {
+
+        String takePhoto=getString(R.string.take_photo);
+        String chooseFromLibrary=getString(R.string.import_photos);
+        String cancel="cancel";
+        String addPhoto="add photo";
+        final CharSequence[] items={takePhoto, chooseFromLibrary, cancel};
+        android.app.AlertDialog.Builder builder=new android.app.AlertDialog.Builder(this);
+        builder.setTitle(addPhoto);
+        final String finalTakephoto=takePhoto;
+        final String finalChooseFromLibrary=chooseFromLibrary;
+        final String finalCancel=cancel;
+        builder.setItems(items, new DialogInterface.OnClickListener() {
+            @RequiresApi(api=Build.VERSION_CODES.JELLY_BEAN_MR2)
+            @Override
+            public void onClick(DialogInterface dialog, int item) {
+                if (items[item].equals(finalTakephoto)) {
+                    Intent intent=new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                    startActivityForResult(intent, REQUEST_CAMERA);
+                } else if (items[item].equals(finalChooseFromLibrary)) {
+                    Intent intent = new Intent();
+                    intent.setType("image/*");
+                    intent.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, true);
+                    intent.setAction(Intent.ACTION_GET_CONTENT);
+                    startActivityForResult(Intent.createChooser(intent,"Select Picture"), 2521);
+                } else if (items[item].equals(finalCancel)) {
+                    dialog.dismiss();
+                }
+            }
+        });
+        builder.show();
+
+    }*/
+
+    @RequiresApi(api=Build.VERSION_CODES.KITKAT)
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        /*if (requestCode == REQUEST_CAMERA && resultCode == Activity.RESULT_OK) {
+            //selectedImageWork.setAlpha(1f);
+            Bitmap photo=(Bitmap) Objects.requireNonNull(data.getExtras()).get("data");
+            // selectedImage.setImageBitmap(photo);
+            Matrix mat=new Matrix();
+            mat.postRotate(Integer.parseInt("270"));
+            assert photo != null;
+            Bitmap bMapRotate=Bitmap.createBitmap(photo, 0, 0, photo.getWidth(), photo.getHeight(), mat, true);
+            //selectedImageWork.setImageBitmap(bMapRotate);
+
+
+        }*/ // For Camera
+
+        if (requestCode == RESULT_LOAD_IMAGE && resultCode == RESULT_OK && data != null) {
+
+            ivGallery.setVisibility(View.GONE);
+            ivCamera.setVisibility(View.GONE);
+            tvImportPhotos.setVisibility(View.GONE);
+            tvTakePhoto.setVisibility(View.GONE);
+            linearLayout.setVisibility(View.GONE);
+            viewPager.setVisibility(View.VISIBLE);
+            tabLayout.setVisibility(View.VISIBLE);
+            TabAdapter adapter=new TabAdapter(getSupportFragmentManager());
+
+            for (int i=0; i < Objects.requireNonNull(data.getClipData()).getItemCount(); i++) {
+
+                imagesUriArrayList.add(data.getClipData().getItemAt(i).getUri().toString()); // All the images URIs retrieved
+            }
+
+
+            GoodPhotosFragment goodPhotosFragment=new GoodPhotosFragment();
+            BadPhotosFragment badPhotosFragment=new BadPhotosFragment();
+            ObjectsFragment objectsFragment=new ObjectsFragment();
+
+            Bundle goodPhotosBundle=new Bundle();
+            goodPhotosBundle.putStringArrayList("good", imagesUriArrayList);// set Fragmentclass Arguments
+            goodPhotosFragment.setArguments(goodPhotosBundle);
+
+
+            adapter.addFragment(goodPhotosFragment, "Good Photos");
+            adapter.addFragment(badPhotosFragment, "Bad Photos");
+            adapter.addFragment(objectsFragment, "Objects");
+
+
+            viewPager.setAdapter(adapter);
+            tabLayout.setupWithViewPager(viewPager);
+
+        }
+    }
 
 }
+

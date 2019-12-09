@@ -21,12 +21,12 @@ public class StaggeredRecyclerViewAdapter extends RecyclerView.Adapter<Staggered
 
 
     private static final String TAG="StaggeredRecyclerView";
-    private ArrayList<String> imageUrls;
+    private ArrayList<String> imageURIs;
     private Context context;
 
 
-    StaggeredRecyclerViewAdapter(Context context, ArrayList<String> imageUrls) {
-        this.imageUrls=imageUrls;
+    StaggeredRecyclerViewAdapter(Context context, ArrayList<String> imageURIs) {
+        this.imageURIs=imageURIs;
         this.context=context;
     }
 
@@ -47,7 +47,7 @@ public class StaggeredRecyclerViewAdapter extends RecyclerView.Adapter<Staggered
                 .placeholder(R.mipmap.ic_launcher);
 
         Glide.with(context)
-                .load(imageUrls.get(i))
+                .load(imageURIs.get(i))
                 .apply(requestOptions)
                 .into(viewHolder.imageView);
 
@@ -55,8 +55,8 @@ public class StaggeredRecyclerViewAdapter extends RecyclerView.Adapter<Staggered
             @Override
             public void onClick(View v) {
 
-                Log.d(TAG, "onClick: clicked " + imageUrls.get(i));
-                Toast.makeText(context, imageUrls.get(i), Toast.LENGTH_LONG).show();
+                Log.d(TAG, "onClick: clicked " + imageURIs.get(i));
+                Toast.makeText(context, imageURIs.get(i), Toast.LENGTH_LONG).show();
             }
         });
 
@@ -64,7 +64,7 @@ public class StaggeredRecyclerViewAdapter extends RecyclerView.Adapter<Staggered
 
     @Override
     public int getItemCount() {
-        return imageUrls.size();
+        return imageURIs.size();
     }
 
     class ViewHolder extends RecyclerView.ViewHolder {
