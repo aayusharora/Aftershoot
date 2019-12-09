@@ -51,8 +51,18 @@ And also some AutoML exciting results :D
 <img src='./images/2.png' style='max-width: 200px' alt='blurry'/>
 <h4>Exposure Detection</h4>
 <p>UnderExposed</p>
-<img src='./images/underexposed.png' style='max-width: 200px' alt='underexposed'/>
-
+<img src='./images/underexposed.png' style='max-width: 200px' alt='underexposed'>
 
 <p>#AndroidDevChallenge</p>
 <a href='https://github.com/aayusharora/Aftershoot/blob/master/cover-letter.md'>Cover Letter</a>
+
+## Don't forget to check our team 
+Two passionate GDE's and MIT Bootcamp Graduates trying to solve real-world problems:
+<figure>
+<figcaption>Aayush Arora, Web and Angular GDE</figcaption>
+<img src='https://avatars2.githubusercontent.com/u/12194719?s=460&v=4' alt='AAYUSH' width='200'>
+</figure>
+<figure>
+ <figcaption>Harshit Dwivedi, Firebase GDE</figcaption>
+ <img src='https://avatars1.githubusercontent.com/u/47669588?s=400&v=4' width='200' alt='harshit'>
+ </figure>
