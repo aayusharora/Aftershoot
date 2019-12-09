@@ -25,9 +25,8 @@ public class GoodPhotosFragment extends Fragment {
     private static final String TAG="MainActivity";
     private static final int NUM_COLUMNS=2;
 
-    private ArrayList<String> imageUrls=new ArrayList<>();
+    private ArrayList<String> imageUris=new ArrayList<>();
     private View parentHolder;
-
 
     @RequiresApi(api=Build.VERSION_CODES.KITKAT)
     @Override
@@ -36,16 +35,13 @@ public class GoodPhotosFragment extends Fragment {
         // Inflate the layout for this fragment
         parentHolder=inflater.inflate(R.layout.fragment_good_photos, container, false);
 
-
         assert getArguments() != null;
         ArrayList<String> arrayList=getArguments().getStringArrayList("good");
 
         assert arrayList != null;
-        //Toast.makeText(getActivity(),arrayList.get(i),Toast.LENGTH_LONG).show();
-        imageUrls.addAll(arrayList);
 
+        imageUris.addAll(arrayList);
         initRecyclerView();
-
         return parentHolder;
     }
 
@@ -54,10 +50,11 @@ public class GoodPhotosFragment extends Fragment {
 
         Log.d(TAG, "initRecyclerView: initializing staggered recyclerView");
         RecyclerView recyclerView=parentHolder.findViewById(R.id.recyclerView);
-        StaggeredRecyclerViewAdapter staggeredRecyclerViewAdapter=new StaggeredRecyclerViewAdapter(getActivity(), imageUrls);
+        StaggeredRecyclerViewAdapter staggeredRecyclerViewAdapter=new StaggeredRecyclerViewAdapter(getActivity(), imageUris);
         StaggeredGridLayoutManager staggeredGridLayoutManager=new StaggeredGridLayoutManager(NUM_COLUMNS, LinearLayoutManager.VERTICAL);
         recyclerView.setLayoutManager(staggeredGridLayoutManager);
         recyclerView.setAdapter(staggeredRecyclerViewAdapter);
+        staggeredRecyclerViewAdapter.notifyDataSetChanged();
     }
 
 

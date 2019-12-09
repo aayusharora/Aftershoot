@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
     private TabLayout tabLayout;
     private ViewPager viewPager;
     private static final int REQUEST_CAMERA=2520, RESULT_LOAD_IMAGE=2521;
-    private ArrayList<String> imagesUriArrayList;
+    private ArrayList<String> goodImagesUriArrayList, tvClassfierArrayList;
 
     @RequiresApi(api=Build.VERSION_CODES.KITKAT)
     @Override
@@ -82,7 +82,8 @@ public class MainActivity extends AppCompatActivity {
         tvTakePhoto=findViewById(R.id.tvTakePhoto);
         linearLayout=findViewById(R.id.linearLayout);
 
-        imagesUriArrayList=new ArrayList<>();
+        goodImagesUriArrayList=new ArrayList<>();
+        tvClassfierArrayList=new ArrayList<>();
 
 
         ivCamera=findViewById(R.id.ivCamera);
@@ -167,7 +168,8 @@ public class MainActivity extends AppCompatActivity {
 
             for (int i=0; i < Objects.requireNonNull(data.getClipData()).getItemCount(); i++) {
 
-                imagesUriArrayList.add(data.getClipData().getItemAt(i).getUri().toString()); // All the images URIs retrieved
+                goodImagesUriArrayList.add(data.getClipData().getItemAt(i).getUri().toString()); // All the images URIs retrieved
+                tvClassfierArrayList.add(String.valueOf(i));
             }
 
 
@@ -176,8 +178,16 @@ public class MainActivity extends AppCompatActivity {
             ObjectsFragment objectsFragment=new ObjectsFragment();
 
             Bundle goodPhotosBundle=new Bundle();
-            goodPhotosBundle.putStringArrayList("good", imagesUriArrayList);// set Fragmentclass Arguments
+            goodPhotosBundle.putStringArrayList("good", goodImagesUriArrayList);
             goodPhotosFragment.setArguments(goodPhotosBundle);
+
+            Bundle badPhotosBundle=new Bundle();
+            badPhotosBundle.putStringArrayList("bad", goodImagesUriArrayList);// change imageUriList For Bad Photos
+            badPhotosFragment.setArguments(badPhotosBundle);
+
+            Bundle objectsBundle=new Bundle();
+            objectsBundle.putStringArrayList("objects", goodImagesUriArrayList);// change imageUriList For objects
+            objectsFragment.setArguments(objectsBundle);
 
 
             adapter.addFragment(goodPhotosFragment, "Good Photos");

@@ -1,6 +1,5 @@
 package com.example.mvp;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -18,49 +17,47 @@ import com.bumptech.glide.request.RequestOptions;
 
 import java.util.ArrayList;
 
+
 public class StaggeredRecyclerViewTextAdapter extends RecyclerView.Adapter<StaggeredRecyclerViewTextAdapter.ViewHolder> {
 
+    private static final String TAG="StaggeredRecyclerViewAd";
 
-    private static final String TAG="StaggeredRecyclerView";
-    private ArrayList<String> imageUrls;
-    private ArrayList<String> tvImageClassfiers;
-    private Context context;
+    private ArrayList<String> mNames;
+    private ArrayList<String> mImageUris;
+    private Context mContext;
 
-
-    StaggeredRecyclerViewTextAdapter(Context context, ArrayList<String> imageUrls, ArrayList<String> tvImageClassfiers) {
-        this.context=context;
-        this.imageUrls=imageUrls;
-        this.tvImageClassfiers=tvImageClassfiers;
+    StaggeredRecyclerViewTextAdapter(Context context, ArrayList<String> names, ArrayList<String> imageUrls) {
+        mNames=names;
+        mImageUris=imageUrls;
+        mContext=context;
     }
 
     @NonNull
     @Override
-    public ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-
-        View view=LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.layout_grid_item, viewGroup, false);
+    public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        View view=LayoutInflater.from(parent.getContext()).inflate(R.layout.layout_grid_item_text, parent, false);
         return new ViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder viewHolder, @SuppressLint("RecyclerView") final int i) {
-
+    public void onBindViewHolder(ViewHolder holder, final int position) {
         Log.d(TAG, "onBindViewHolder: called.");
 
         RequestOptions requestOptions=new RequestOptions()
-                .placeholder(R.mipmap.ic_launcher);
+                .placeholder(R.drawable.ic_launcher_background);
 
-        Glide.with(context)
-                .load(imageUrls.get(i))
+        Glide.with(mContext)
+                .load(mImageUris.get(position))
                 .apply(requestOptions)
-                .into(viewHolder.imageView);
+                .into(holder.image);
 
+        holder.name.setText(mNames.get(position));
 
-        viewHolder.imageView.setOnClickListener(new View.OnClickListener() {
+        holder.image.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-
-                Log.d(TAG, "onClick: clicked " + imageUrls.get(i));
-                Toast.makeText(context, imageUrls.get(i), Toast.LENGTH_LONG).show();
+            public void onClick(View view) {
+                Log.d(TAG, "onClick: clicked on: " + mNames.get(position));
+                Toast.makeText(mContext, mNames.get(position), Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -68,19 +65,18 @@ public class StaggeredRecyclerViewTextAdapter extends RecyclerView.Adapter<Stagg
 
     @Override
     public int getItemCount() {
-        return imageUrls.size();
+        return mImageUris.size();
     }
 
     class ViewHolder extends RecyclerView.ViewHolder {
 
-        ImageView imageView;
-        TextView textView;
+        ImageView image;
+        TextView name;
 
-        ViewHolder(@NonNull View itemView) {
+        ViewHolder(View itemView) {
             super(itemView);
-            this.imageView=itemView.findViewById(R.id.imageView);
+            this.image=itemView.findViewById(R.id.imageViewGrid);
+            this.name=itemView.findViewById(R.id.tvImageClassfier);
         }
-
-
     }
 }
