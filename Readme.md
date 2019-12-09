@@ -60,9 +60,13 @@ And also some AutoML exciting results :D
 Two passionate GDE's and MIT Bootcamp Graduates trying to solve real-world problems:
 <figure>
 <figcaption>Aayush Arora, Web and Angular GDE</figcaption>
-<img src='https://avatars2.githubusercontent.com/u/12194719?s=460&v=4' alt='AAYUSH' width='200'>
+<a href='https://github.com/aayusharora'>
+ <img src='https://avatars2.githubusercontent.com/u/12194719?s=460&v=4' alt='AAYUSH' width='200'>
+</a>
 </figure>
 <figure>
  <figcaption>Harshit Dwivedi, Firebase GDE</figcaption>
- <img src='https://avatars1.githubusercontent.com/u/47669588?s=400&v=4' width='200' alt='harshit'>
+ <a href='https://github.com/harshithdwivedi'>
+    <img src='https://avatars1.githubusercontent.com/u/47669588?s=400&v=4' width='200' alt='harshit'>
+  </a>
  </figure>
